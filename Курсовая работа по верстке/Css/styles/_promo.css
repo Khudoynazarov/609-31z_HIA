@@ -1,0 +1,346 @@
+.hero {
+    padding: 180px 0 100px;
+    background-color: var(--light-gray);
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.clients {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.clients h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.client-logos {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.client-logos img {
+    height: 60px;
+    margin: 20px 40px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.client-logos img:hover {
+    opacity: 1;
+}
+
+.community {
+    padding: 80px 0;
+    text-align: center;
+    background-color: var(--light-gray);
+}
+
+.community h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.community-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 280px;
+    margin: 0 15px 30px;
+    padding: 40px 30px;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.testimonial {
+    padding: 100px 0;
+}
+
+.testimonial .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.testimonial-image {
+    flex: 1;
+}
+
+.testimonial-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.testimonial-content {
+    flex: 1;
+    padding-left: 60px;
+}
+
+.testimonial-content p:first-child {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 30px;
+}
+
+.achievements {
+    background-color: #f5f7fa;
+    padding: 60px 20px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-block {
+    flex: 1 1 40%;
+}
+
+.text-block h2 {
+    font-size: 40px;
+    color: #2d2d2d;
+}
+
+.text-block h2 span {
+    color: #4caf50;
+    font-weight: 600;
+}
+
+.text-block p {
+    color: #263238;
+    margin-top: 10px;
+}
+
+.stats-grid {
+    flex: 1 1 55%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.stat {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.stat img {
+    width: 40px;
+    height: 40px;
+}
+
+.stat h3 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.stat p {
+    margin: 0;
+    color: #7d8da6;
+}
+
+.business-case {
+    padding: 100px 0;
+}
+
+.case-content {
+    display: flex;
+    align-items: stretch;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;  
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.case-image img {
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+.case-text {
+    flex: 1;
+    height: 280px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden; 
+}
+
+.case-text p {
+    text-align: left;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    overflow: hidden;
+}
+
+.author {
+    margin-top: 20px;
+}
+
+.author strong {
+    display: block;
+    font-size: 18px;
+    color: #3cb371;
+}
+
+.author span {
+    display: block;
+    color: #999;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.case-logos {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.case-logos img {
+    height: 40px;
+    margin: 15px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.case-logos img:hover {
+    opacity: 1;
+}
+
+.cta {
+    padding: 80px 0;
+    background-color: var(--light-gray);
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+/* покрасим и вынесем на новую строку вторую часть заголовка */
+.cta h2 .highlight {
+    display: block;
+    color: var(--primary-color);
+}
+
+/* подзаголовок */
+.cta p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: var(--gray);
+}
+
+/* базовый кнопки */
+.cta .btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 6px;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+/* стрелка после текста */
+.cta .btn-primary.btn-demo::after {
+    content: " →";
+}
+
+/* Изменения цвета для части текста */
+.cta .btn-primary:hover {
+    background-color: #3d8b40;
+}
+.highlight {
+    color: #3d8b40; 
+    display: inline-block; 
+    box-decoration-break: clone; 
+  }
+/* на мобильниках делаем кнопку растянутой на всю ширину */
+@media (max-width: 576px) {
+    .cta .btn-primary {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    .cta h2 {
+        font-size: 30px;
+        line-height: 1.2;
+        margin-bottom: 10px;
+        color: var(--text-color);
+    }
+    .business-case {
+        padding: 0;
+    }
+    .client-logos img {
+        height: 80px;
+        margin: 0px 12px;
+    }
+}

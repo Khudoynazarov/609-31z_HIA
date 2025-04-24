@@ -1,0 +1,187 @@
+/* базовые стили (десктоп)  */
+.footer {
+    padding: 80px 0 30px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* ОБЩИЕ ПРАВИЛА ДЛЯ ВСЕХ КОЛОНОК */
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 30px;
+    padding: 0 15px;
+    text-align: left;             /* Заголовок + список — слева */
+}
+
+.footer-logo {
+    height: 32px;
+    margin-bottom: 20px;
+}
+
+/* Заголовки */
+.footer-column h3 {
+    font-size: 20px;
+    margin: 0 0 20px;
+    text-align: left;
+}
+
+/* Списки */
+.footer-column ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footer-column ul li {
+    margin-bottom: 12px;
+    text-align: left;             /* сам <li> слева */
+}
+.footer-column ul li a {
+    color: #F5F7FA;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-align: left;             /* сам <a> слева */
+}
+.footer-column ul li a:hover {
+    color: var(--primary-color);
+}
+
+/* Форма подписки */
+.newsletter-form {
+    display: flex;
+    margin-top: 20px;
+}
+.newsletter-form input {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px 0 0 6px;
+    font-size: 14px;
+}
+.newsletter-form button {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 0 15px;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+}
+
+/* Соц‑иконки */
+.social-icons {
+    display: flex;
+    margin-top: 20px;
+}
+.social-icons a {
+    margin-right: 16px;
+}
+.social-icons img {
+    height: 24px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+.social-icons img:hover {
+    opacity: 1;
+}
+
+/* Копирайт */
+.copyright p {
+    margin: 0;
+    font-size: 14px;
+    text-align: center;
+    color: #F5F7FA;
+}
+
+/* МОБИЛЬНАЯ ВЕРСИЯ */
+@media (max-width: 768px) {
+
+    /* сетка 2×N */
+    .footer-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px 24px;
+    }
+
+    /* Логотип на всю ширину */
+    .footer-column:first-child {
+        grid-column: 1 / -1;
+        padding: 0;
+        margin: 0 0 32px;
+        text-align: left;
+    }
+
+    /* Общая обрезка отступов у текстовых колонок и левое выравнивание */
+    .footer-column {
+        min-width: 0;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+    }
+
+    /* Заголовок и списки — слева */
+    .footer-column h3,
+    .footer-column ul li,
+    .footer-column ul li a {
+        text-align: left;
+    }
+
+    /* Stay up to date (последняя колонка) — опять на всю ширину */
+    .footer-column:last-child {
+        grid-column: 1 / -1;
+    }
+
+    /* Форма подписки растягиваем и стилизуем */
+    .newsletter-form {
+        grid-column: 1 / -1;
+    }
+    .newsletter-form input {
+        background: rgba(255,255,255,0.08);
+        color: var(--white);
+        border-radius: 6px 0 0 6px;
+    }
+    .newsletter-form input::placeholder {
+        color: #b5b5b5;
+    }
+    .newsletter-form button {
+        background: rgba(255,255,255,0.12);
+        transition: background 0.3s ease;
+    }
+    .newsletter-form button:hover {
+        background: rgba(255,255,255,0.2);
+    }
+
+    /* Соц‑иконки */
+    .social-icons {
+        grid-column: 1 / -1;
+        margin-top: 24px;
+    }
+    .social-icons a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.08);
+        margin-right: 12px;
+        transition: background 0.3s ease;
+    }
+    .social-icons a:hover {
+        background: rgba(255,255,255,0.16);
+    }
+    .social-icons img {
+        height: 22px;
+        opacity: 1;
+    }
+
+    /* Копирайт */
+    .copyright p {
+        margin-top: 32px;
+        grid-column: 1 / -1;
+    }
+}

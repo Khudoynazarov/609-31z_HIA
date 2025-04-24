@@ -1,0 +1,123 @@
+
+@media (max-width: 992px) {
+    /* Hero складывается в колонку */
+    .hero .container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .hero-content {
+        margin-bottom: 40px;
+        max-width: 100%;
+    }
+    .hero-image {
+        text-align: center;
+    }
+
+    .testimonial .container,
+    .case-content {
+        flex-direction: column;
+    }
+
+    .testimonial-content {
+        padding-left: 0;
+        margin-top: 40px;
+    }
+
+    .case-text {
+        max-width: 100%;
+        text-align: left;
+    }
+
+        .case-text p {
+            text-align: left;
+        }
+}
+
+/* ---------------- смартфоны ≤ 768 px ---------------- */
+@media (max-width: 768px) {
+    /* ---------- навигация ---------- */
+    .navbar {
+        flex-direction: row;          /* одна строка */
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .mobile-menu-button {
+        display: flex;               
+        margin-left: auto;            
+        position: relative;
+
+    }
+
+    /* списки меню и кнопки авторизации скрыты до клика
+       (их поведение задаётся в _navigation.css)          */
+    .nav-links {
+        margin: 20px 0;
+        flex-direction: column;
+    }
+
+    .auth-buttons {
+        margin-bottom: 20px;
+    }
+
+    /* ---------- контент ---------- */
+    .community-cards {
+        flex-direction: column;
+    }
+
+    .card {
+        margin: 0 0 30px;
+    }
+
+    /* ---------- footer ---------- */
+    .footer-column {
+        min-width: 50%;
+    }
+
+    /* ---------- изображение business‑case ---------- */
+    .case-image img {
+        width: 100%;
+        height: auto;                 /* больше не вылезет за край */
+    }
+}
+
+/* ---------------- XS‑экраны ≤ 576 px ---------------- */
+@media (max-width: 576px) {
+    /* Hero компактнее */
+    .hero {
+        padding: 120px 0 60px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+        line-height: 1.25;
+    }
+
+    /* меню в колонку */
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .community-cards {
+        flex-direction: column;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-column {
+        min-width: 100%;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: left   ;
+    }
+}

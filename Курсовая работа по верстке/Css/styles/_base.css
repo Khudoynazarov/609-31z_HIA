@@ -1,0 +1,70 @@
+/* Определение основных цветов и текстовых стилей */
+
+:root {
+    --primary-color: #4CAF4F;
+    --secondary-color: #263238;
+    --text-color: #18191F;
+    --light-gray: #F5F7FA;
+    --white: #FFFFFF;
+    --gray: #717171;
+}
+    /* Сброс стилей для всех элементов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основные стили для боди */
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Контейнер для центрирования контента */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Стили для кнопочек */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+/* Стили для основной кнопки */
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* Стили для основной кнопки при наведении */
+.btn-primary:hover {
+    background-color: #3d8b40;
+}
+
+/* Стили для кнопки входа */
+.btn-login {
+    color: var(--primary-color);
+    margin-right: 14px;
+}
+
+/* Стили для заголовков */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+/* Стили для абзацев */
+p {
+    margin-bottom: 16px;
+    color: var(--gray);
+}
