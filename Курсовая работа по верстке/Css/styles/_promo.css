@@ -50,8 +50,7 @@
 .client-logos img {
     height: 60px;
     margin: 20px 40px;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
+ 
 }
 
 .client-logos img:hover {
