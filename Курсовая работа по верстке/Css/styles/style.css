@@ -1,6 +1,3 @@
-/* Main stylesheet importing partials */
 @import './_base.css';
 @import './_navigation.css';
 @import './_promo.css';
-
-/* Add responsive styles or overrides here if needed */
